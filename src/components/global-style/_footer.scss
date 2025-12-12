@@ -1,0 +1,114 @@
+.footer {
+  margin-top: 80px;
+
+  .container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+
+    .col-1 {
+      .description {
+        width: 300px;
+        font-family: Open Sans;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        color: #777777;
+        margin-top: 40px;
+      }
+
+      .text {
+        display: block;
+        font-family: Open Sans;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        color: #777777;
+        margin-top: 60px;
+      }
+    }
+
+    .footer-box {
+      width: 640px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .col {
+        gap: 30px;
+        display: flex;
+        flex-direction: column;
+        .top-text {
+          font-family: Open Sans;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 32px;
+          letter-spacing: 0%;
+          vertical-align: middle;
+        }
+
+        .custom-box {
+          gap: 15px;
+          display: flex;
+          align-items: center;
+          .footer-link {
+            font-family: Open Sans;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 32px;
+            letter-spacing: 0%;
+            vertical-align: middle;
+            color: #777777;
+            text-decoration: none;
+          }
+          .custom-text {
+            padding: 0 14px;
+            border-radius: 120px;
+            background-color: #65e4a3;
+            color: #0a2640;
+            font-family: Open Sans;
+            font-weight: 700;
+            font-size: 13px;
+            line-height: 28px;
+            letter-spacing: 0%;
+            vertical-align: middle;
+          }
+        }
+
+        .footer-link {
+          font-family: Open Sans;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 32px;
+          letter-spacing: 0%;
+          vertical-align: middle;
+          color: #777777;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .footer {
+    margin-top: 50px;
+    .container {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        align-items: start;
+        overflow-x: scroll;
+        gap: 30px;
+
+        .footer-box {
+            min-width: max-content;
+            gap: 40px;
+        }
+    }
+  }
+}

@@ -1,0 +1,138 @@
+.our-blog {
+  margin-top: 80px;
+
+  .container {
+    .our-blog-box {
+      display: flex;
+      align-items: center;
+      max-width: 1000px;
+      margin: 0 auto;
+      justify-content: space-between;
+
+      .our-blog-card {
+        .time-box {
+          margin-top: 24px;
+          display: flex;
+          align-items: center;
+          gap: 12px;
+
+          .text {
+            font-family: Open Sans;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 28px;
+            letter-spacing: 0%;
+            color: #0a2640;
+          }
+
+          .time {
+            font-family: Open Sans;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            letter-spacing: 0%;
+            color: #777777;
+          }
+        }
+
+        .description {
+            width: 300px;
+          font-family: Open Sans;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 32px;
+          letter-spacing: 0%;
+          margin-top: 12px;
+        }
+
+        .human-box {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          margin-top: 40px;
+
+          .name {
+            font-family: Open Sans;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            letter-spacing: 0%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .our-blog {
+    margin-top: 50px;
+    padding-bottom: 50px;
+
+    .container {
+      .our-blog-box {
+        overflow-x: scroll;
+        gap: 40px;
+
+        .our-blog-card {
+          min-width: 300px;
+
+          .our-blog-img {
+            width: 300px;
+            height: auto;
+          }
+
+          .time-box {
+            margin-top: 24px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+
+            .text {
+              font-family: Open Sans;
+              font-weight: 700;
+              font-size: 16px;
+              line-height: 28px;
+              letter-spacing: 0%;
+              color: #0a2640;
+            }
+
+            .time {
+              font-family: Open Sans;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 28px;
+              letter-spacing: 0%;
+              color: #777777;
+            }
+          }
+
+          .description {
+            width: 300px;
+            font-family: Open Sans;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 32px;
+            letter-spacing: 0%;
+            margin-top: 12px;
+          }
+
+          .human-box {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-top: 40px;
+
+            .name {
+              font-family: Open Sans;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 28px;
+              letter-spacing: 0%;
+            }
+          }
+        }        
+      }
+    }
+  }
+}

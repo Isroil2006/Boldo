@@ -1,0 +1,56 @@
+.our-team {
+  margin-top: 52px;
+
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .card {
+      display: flex;
+      flex-direction: column;
+
+      .name {
+        font-family: Manrope;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 48px;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        color: black;
+        margin-top: 24px;
+      }
+
+      .work {
+        font-family: Open Sans;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 32px;
+        letter-spacing: 0%;
+        color: #777777;
+        margin-top: 12px;
+      }
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .our-team {
+    .container {
+      flex-direction: column;
+      gap: 30px;
+      padding-bottom: 30px;
+
+      .card {
+        align-items: center;
+
+        .name {
+          text-align: center;
+
+        }
+      }
+    }
+  }
+}

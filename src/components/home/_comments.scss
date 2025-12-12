@@ -1,0 +1,131 @@
+.comments {
+  margin-top: 100px;
+  padding-top: 100px;
+  background-color: #0a2640;
+  padding-bottom: 90px;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+
+    .top-box {
+      display: flex;
+      justify-content: space-between;
+
+      .title {
+        font-family: Manrope;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 72px;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        color: white;
+        width: 716px;
+      }
+
+      .sellect-box {
+        display: flex;
+        align-items: center;
+        width: max-content;
+        gap: 28px;
+        align-self: flex-end;
+
+        .sellect {
+          width: 72px;
+          height: 72px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          background-color: white;
+          border: none;
+          transition: 0.3s ease;
+        }
+
+        .sellect:active {
+          transform: scale(0.95);
+        }
+      }
+    }
+
+    .comment-bottom {
+      display: flex;
+      gap: 22px;
+      margin-top: 70px;
+
+      .comment-card {
+        height: max-content;
+        flex-direction: column;
+        padding: 40px;
+        background-color: white;
+        border-radius: 12px;
+
+        .description {
+          font-family: Open Sans;
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 36px;
+          letter-spacing: 0%;
+          color: black;
+          width: 270px;
+        }
+
+        .info-human-box {
+          display: flex;
+          align-items: center;
+          gap: 16px;
+          margin-top: 40px;
+
+          .info-human {
+            display: flex;
+            flex-direction: column;
+
+            .name {
+              display: block;
+              font-family: Open Sans;
+              font-weight: 700;
+              font-size: 16px;
+              line-height: 32px;
+              letter-spacing: 0%;
+              vertical-align: middle;
+              color: #0a2640;
+            }
+
+            .work {
+              color: #0a2640;
+              font-family: Open Sans;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 32px;
+              letter-spacing: 0%;
+              vertical-align: middle;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .comments {
+    .container {
+      .top-box {
+        .title {
+          width: 100%;
+          font-size: 24px;
+          line-height: 36px;
+        }
+
+        .sellect-box {
+            display: none;
+        }
+      }
+
+      .comment-bottom{
+        flex-direction: column;
+        gap: 25px;
+      }
+    }
+  }
+}

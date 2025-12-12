@@ -1,0 +1,94 @@
+#burger-btn.active .hero {
+  opacity: 0.4;
+}
+
+.hero {
+  padding-top: 64px;
+  height: max-content;
+  background-color: #0a2640;
+  transition: 0.3s ease;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 56px;
+
+    .info {
+      .title {
+        font-family: Manrope;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 72px;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        color: white;
+      }
+
+      .description {
+        font-family: Open Sans;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0%;
+        color: #f1f1f1;
+        margin-top: 15px;
+      }
+
+      .hero-btns-box {
+        display: flex;
+        margin-top: 40px;
+        gap: 24px !important;
+
+        .hero-btn:hover {
+        }
+
+        .hero-btn:active {
+          background-color: #65e4a3;
+          color: #0a2640;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .hero {
+    .container {
+      flex-direction: column;
+      gap: 30px;
+
+      .hero-img {
+        width: 100%;
+        height: auto;
+      }
+
+      .info {
+        width: 100%;
+
+        .title {
+          font-size: 32px;
+          line-height: 48px;
+        }
+
+        .description {
+          font-size: 14px;
+          line-height: 22px;
+
+          .hidden-br {
+            display: none;
+          }
+        }
+
+        .hero-btns-box {
+          flex-direction: column;
+          gap: 20px;
+
+          .hero-btn {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

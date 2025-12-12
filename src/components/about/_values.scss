@@ -1,0 +1,128 @@
+.values {
+  margin-top: 120px;
+  background-color: #0a2640;
+
+  .container {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    max-width: 802px;
+    margin: 0 auto;
+
+    .top-text {
+      font-family: Open Sans;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 32px;
+      letter-spacing: 0%;
+      vertical-align: middle;
+      color: white;
+    }
+
+    .title {
+      font-family: Manrope;
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 72px;
+      letter-spacing: 0%;
+      vertical-align: middle;
+      color: white;
+      margin-top: 12px;
+    }
+
+    .top-description {
+        width: 800px;
+      font-family: Open Sans;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 32px;
+      letter-spacing: 0%;
+      margin-top: 20px;
+      color: white;
+    }
+
+    .values-box {
+      display: flex;
+      flex-direction: column;
+      margin-top: 72px;
+      gap: 70px;
+
+      .card {
+        display: flex;
+        gap: 50px
+        ;
+
+        .card-box {
+          display: flex;
+          flex-direction: column;
+
+          .text {
+            font-family: Manrope;
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 48px;
+            letter-spacing: 0%;
+            vertical-align: middle;
+            color: white;
+          }
+
+          .bottom-description {
+            font-family: Open Sans;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 32px;
+            letter-spacing: 0%;
+            color: white;
+            width: 602px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .values {
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    .container {
+      padding-top: 50px;
+      max-width: 320px;
+      margin: 0 auto;
+      padding-bottom: 30px;
+
+      .title {
+        font-size: 32px;
+        line-height: 48px;
+      }
+
+      .top-description {
+        width: 100%;
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      .values-box {
+        margin-top: 50px;
+
+        .card {
+          flex-direction: column;
+
+          .card-box {
+            .text {
+                width: 100%;
+              font-size: 20px;
+              line-height: 32px;
+            }
+
+            .bottom-description {
+                width: 100%;
+              font-size: 16px;
+              line-height: 24px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

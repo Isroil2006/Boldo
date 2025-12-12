@@ -1,0 +1,66 @@
+.story {
+  margin-top: 650px;
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+
+    .top-text {
+      font-family: Open Sans;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 32px;
+      letter-spacing: 0%;
+      vertical-align: middle;
+      color: #777777;
+    }
+
+    .title {
+      margin-top: 12px;
+      font-family: Manrope;
+      font-weight: 400;
+      font-size: 46px;
+      line-height: 72px;
+      letter-spacing: 0%;
+      vertical-align: middle;
+      color: black;
+    }
+
+    .description {
+      margin-top: 32px;
+      font-family: Open Sans;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 32px;
+      letter-spacing: 0%;
+      color: #777777;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .story {
+    margin-top: 50px;
+
+    .container {
+        max-width: 320px;
+        margin: 0 auto;
+      .top-text {
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      .title {
+        margin-top: 8px;
+        font-size: 32px;
+        line-height: 48px;
+      }
+
+      .description {
+        margin-top: 24px;
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+  }
+}

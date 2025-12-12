@@ -1,0 +1,22 @@
+.add-site {
+  padding-top: 76px;
+  padding-bottom: 80px;
+  background-color: #0a2640;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 420px) {
+  .add-site {
+    padding-top: 0;
+    padding-bottom: 50px;
+
+    .container {
+      gap: 40px;
+      overflow-x: scroll;
+    }
+  }
+}
